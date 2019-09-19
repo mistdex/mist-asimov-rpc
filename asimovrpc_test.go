@@ -355,7 +355,7 @@ func (s *AsimovRPCTestSuite) TestAsimovBlockNumber() {
 }
 
 func (s *AsimovRPCTestSuite) TestAsimovGetBalance() {
-	address := "0x407d73d8a49eeb85d32cf465507dd71d507100c1"
+	address := "0x66b31cab7d9eb10cfcdb7a3c19dcd45f362e15ba8e"
 	s.registerResponseError(errors.New("Error"))
 	balance, err := s.rpc.AsimovGetBalance(address, "latest")
 	s.Require().NotNil(err)
